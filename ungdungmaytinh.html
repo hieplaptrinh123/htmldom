@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Caculator</h2>
+        <input id="soThuNhat" type="number" />
+        <input id="soThuHai" type="number" />
+        <br>
+        <button type="button" onclick="phepCong()">Addition(+)</button>
+        <button type="button" onclick="phepTru()">Subtraction(-)</button>
+        <button type="button" onclick="phepNhan()">Multiplication(x)</button>
+        <button type="button" onclick="phepChia()">Divison(/)</button>
+        <div id="ketQua">
+            
+        </div>
+        <script>
+            function phepCong(){
+                let soThuNhat = document.getElementById("soThuNhat").value;
+                soThuNhat = parseInt(soThuNhat);
+                let soThuHai = document.getElementById("soThuHai").value;
+                soThuHai = parseInt(soThuHai);
+                let Tong = soThuNhat + soThuHai;
+                Tong = parseInt(Tong);
+                document.getElementById("ketQua").innerHTML = Tong;           
+             }
+
+             function phepTru(){
+                let soThuNhat = document.getElementById("soThuNhat").value;
+                soThuNhat = parseInt(soThuNhat);
+                let soThuHai = document.getElementById("soThuHai").value;
+                soThuHai = parseInt(soThuHai);
+                let Hieu = soThuNhat - soThuHai;
+                Hieu = parseInt(Hieu);
+                document.getElementById("ketQua").innerHTML = Hieu;           
+             }
+
+
+             function phepChia(){
+                let soThuNhat = document.getElementById("soThuNhat").value;
+                soThuNhat = parseInt(soThuNhat);
+                let soThuHai = document.getElementById("soThuHai").value;
+                soThuHai = parseInt(soThuHai);
+                let Chia = soThuNhat / soThuHai;
+                Thuong = parseInt(Thuong);
+                document.getElementById("ketQua").innerHTML = Thuong;           
+             }
+
+
+             function phepNhan(){
+                let soThuNhat = document.getElementById("soThuNhat").value;
+                soThuNhat = parseInt(soThuNhat);
+                let soThuHai = document.getElementById("soThuHai").value;
+                soThuHai = parseInt(soThuHai);
+                let Tich = soThuNhat * soThuHai;
+                Tich = parseInt(Tich);
+                document.getElementById("ketQua").innerHTML = Tich;           
+             }
+
+
+
+        </script>
+    </form>
+    
+
+
+</body>
+</html>
